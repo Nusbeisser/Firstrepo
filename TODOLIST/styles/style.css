@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+html {
+  font-size: 80.5%;
+}
+body {
+  background-color: #d1ffff;
+}
+
+#mainnav {
+font-size: 2rem;
+padding: 1vw;
+width: 97vw;
+}
+
+#sidenav {
+float: left;
+width: 3vw;
+}
+
+.mainnavbutton {
+  float: left;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+#maincontent {
+height: 100vh;
+width: 100%;
+float: left;
+text-align: center;
+display: flex;
+justify-content: center;
+
+
+}
+
+#calendar {
+  margin-top: 5rem;
+  width: 45rem;
+  height: 52rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  position:absolute;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  color: blue;
+}
+.weekenddays {
+  color: red;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #898989;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+.today:hover {
+  background-color: #898989;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+
+.dayWindow {
+  position: absolute;
+  z-index: 10;
+  border: 1px solid black;
+  width: 41.4rem;
+  height: 60rem;
+}
+
+
+.dayWindowOff {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+/*d1ffff*/
+/*#e6ccff*/
+#draggableDiv {
+  background-color: #f7ddff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+
+}
+
+#draggableDivHeader {
+  width: 40rem;
+  height: 8rem;
+
+
+}
+
+#draggableDivClose {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+  margin-left: 38rem;
+  font-size: 150%;
+}
+#draggableDivClose:hover {
+  cursor: pointer;
+}
+
+#draggableDivAdd {
+  width: 40rem;
+  height: 5rem;
+
+  padding-top: 5%;
+}
+
+.draggableDivName {
+  width: 42rem;
+  height: 2rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  float:left;
+  font-weight: bolder;
+  font-size: 120%
+}
+
+.draggableDivTime {
+  width: 4.6rem;
+  height: 2rem;
+  border: 1px solid pink;
+  float:left;
+}
+
+.oneValue {
+  width: 39.8rem;
+  border-bottom: 0px dashed black;
+  float:left;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 100%;
+  text-align: left;
+}
+
+#deleteActivity {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  float:left;
+  left: 37.6rem;
+  top: 0px;
+}
+
+#deleteActivity:hover {
+  cursor: pointer;
+}
+
+#dayDate {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1.75rem
+}
+
+#activityInput {
+  width: 20rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+#activityInput:focus {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 5px #b1b1c5;
+}
+
+.icon-trash {
+  font-size: 150%;
+}

@@ -1,0 +1,87 @@
+<!doctype HTML>
+
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>ToDo LIST!</title>
+
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<link href="css/fontello.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+</head>
+
+<body>
+<nav id="mainnav">
+
+  <div class="mainnavbutton"><a href="index.html">Strona główna </a></div>
+  <div class="mainnavbutton"><a href="calendar.html">Kalendarz</a></div>
+  <div class="mainnavbutton"><a href="#">Ustawienia</a></div>
+<div style="clear:both;"></div>
+
+</nav>
+
+
+<div id="maincontent">
+
+<div id="draggableDiv" class="dayWindowOff">
+  <div id="draggableDivHeader" class="dayOn">
+    <div id="draggableDivClose">X</div>
+    <div id="dayDate" class="dayOn">Nagłówek</div>
+
+  </div>
+  <div id="draggableDivAdd" class="dayOn">
+    <input id="activityInput" type="text" class="dayOn" placeholder="Wpisz zadanie..."></input>
+    <!--<input type="time" class="dayOn"></input>-->
+    <button type="button" class="dayOn" onclick='addActivity()'>Dodaj aktywność</button></div>
+
+  <div class="draggableDivName dayOn">Lista zadań</div>
+<!-- <div class="draggableDivTime dayOn">Godzina:</div>-->
+  <div style="clear:both;"></div>
+  <div id="draggableDivActivs" class="dayOn"></div>
+  <div id="draggableDivTimes" class="dayOn"></div>
+
+</div>
+
+<div id="calendar">
+<div class="month">
+ <i class="fas fa-angle-left prev"></i>
+<div class="date">
+  <h1></h1>
+  <p></p>
+</div>
+  <i class="fas fa-angle-right next"></i>
+</div>
+<div class="weekdays">
+  <div>Pn</div>
+  <div>Wt</div>
+  <div>Śr</div>
+  <div>Cz</div>
+  <div>Pt</div>
+  <div class="weekenddays">Sb</div>
+  <div class="weekenddays">N</div>
+</div>
+
+<div class="days"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<div style="clear:both;"></div>
+<script src="scripts/main.js"></script>
+</body>
+
+
+
+</html>
